@@ -29,3 +29,16 @@ truck => 3
 SUV => 1
 motorcycle => 2
 =end
+
+# ls solution
+def count_occurrences(array)
+  occurrences = {}
+
+  array.each do |element|
+    occurrences[element] = array.count(element)
+  end
+
+  occurrences.each do |element, count|
+    puts "#{element} => #{count}"
+  end
+end
