@@ -31,7 +31,7 @@ puts reverse_words('Walk around the block') # => Walk dnuora the kcolb
 puts reverse_words('Launch School')         # => hcnuaL loohcS
 
 # ls soln
-def reverse_words(string)
+def reverse_words1(string)
   words = []
 
   string.split.each do |word|
@@ -41,3 +41,6 @@ def reverse_words(string)
 
   words.join(' ')
 end
+puts reverse_words1('Professional')          # => lanoisseforP
+puts reverse_words1('Walk around the block') # => Walk dnuora the kcolb
+puts reverse_words1('Launch School')         # => hcnuaL loohcS
